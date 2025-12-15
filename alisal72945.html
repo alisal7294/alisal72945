@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Website | Muhammad Ali</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(0,0,0,0.4);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* DROPDOWN */
+        ul li ul {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background: rgba(0,0,0,0.85);
+            padding: 10px;
+            border-radius: 15px;
+            display: none;
+            flex-direction: column;
+            min-width: 160px;
+        }
+
+        ul li:hover ul {
+            display: flex;
+        }
+
+        ul li ul li {
+            padding: 8px;
+        }
+
+        ul li ul li a {
+            font-size: 14px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 10%;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* OWNERS */
+        .owners {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .owner-card {
+            background: rgba(0,0,0,0.4);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .owner-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.12);
+        }
+
+        .owner-card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* CONTACT */
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px 20px 0 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>MA Portfolio</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li>
+            <a>About ▾</a>
+            <ul>
+                <li><a href="#about">Who We Are</a></li>
+                <li><a href="#owners">Site Owners</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a>Contact ▾</a>
+            <ul>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About This Website</h2>
+        <p>
+            This website is an official collaborative project maintained on GitHub.
+            It represents our shared interests in technology, development, creativity,
+            and learning. Built with clean HTML and CSS, this site reflects simplicity,
+            performance, and modern design principles.
+        </p>
+    </div>
+</section>
+
+<section id="owners">
+    <div class="card">
+        <h2>Fellow Owners</h2>
+
+        <div class="owners">
+            <div class="owner-card">
+                <h3>Muhammad Ali</h3>
+                <p>Founder & Developer</p>
+            </div>
+
+            <div class="owner-card">
+                <h3>Sharjeel Khan Niazi</h3>
+                <p>Co-Owner</p>
+            </div>
+
+            <div class="owner-card">
+                <h3>GC Ehtisham</h3>
+                <p>Co-Owner</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+
+        <div class="contact-info">
+            <p>Email: your-email@example.com</p>
+            <p>GitHub: github.com/yourusername</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Muhammad Ali & Team | Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
